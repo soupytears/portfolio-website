@@ -1,0 +1,57 @@
+.navContainer,
+.navbar-nav {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  gap: 2rem;
+  margin: 10px auto 0 auto !important;
+  width: 100%;
+  max-width: 600px;
+}
+
+.navbar .nav-link {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: clamp(1.25rem, 5vw, 2.25rem);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  transition: color 0.12s;
+  width: fit-content;
+  position: relative;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  white-space: nowrap !important;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar .nav-link,
+.navbar .nav-link:visited,
+.navbar .nav-link:focus,
+.navbar .nav-link:active,
+.navbar .nav-link.active {
+  color: var(--text) !important;
+}
+
+.navbar .nav-link:hover {
+  color: var(--accent) !important;
+}
+
+@media (max-width: 480px) {
+  .navContainer,
+  .navbar-nav {
+    gap: 0.75rem !important;
+    margin-left: 0 !important;
+  }
+
+  .navbar .nav-link {
+    font-size: 1.5rem !important;
+    padding-left: 0.25rem !important;
+    padding-right: 0.25rem !important;
+  }
+}

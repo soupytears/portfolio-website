@@ -1,0 +1,58 @@
+.styled-contact-form {
+  text-align: left;
+}
+
+.form-label-custom {
+  font-family: var(--sans) !important;
+  font-size: 18px;
+  color: var(--text-h);
+  margin-bottom: 4px;
+}
+
+.form-input-custom {
+  font-family: var(--sans) !important;
+  font-size: 16px;
+  color: var(--text) !important;
+  background-color: var(--bg) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 8px !important;
+  padding: 8px 12px !important;
+  box-shadow: none !important;
+}
+
+.form-input-custom:focus {
+  border-color: var(--accent) !important;
+  outline: none;
+}
+
+.form-input-custom::placeholder {
+  color: var(--text-g);
+  opacity: 0.6;
+}
+
+.submit-btn-custom {
+  font-family: var(--sans) !important;
+  font-size: 18px !important;
+  background-color: var(--accent) !important;
+  color: var(--bg) !important;
+  border-radius: 8px !important;
+  padding: 8px 16px !important;
+  width: 50% !important;
+  transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+.submit-btn-custom:hover {
+  background-color: var(--accent-dark) !important;
+  transform: translateY(-1px);
+}
+
+.submit-btn-custom:active {
+  transform: translateY(0);
+}
+
+.form-status-text {
+  font-family: var(--sans) !important;
+  font-size: 16px;
+  color: var(--text-g);
+  text-align: center;
+}

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+@font-face {
+  font-family: 'testtypelefthand';
+  src: url('./assets/fonts/testtype-lefthand-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --text: #5F4242;
+  --text-h: #705656;
+  --text-g: #a39a9a;
+  --bg: #FAFAF6;
+  --border: #bebea9;
+  --code-bg: #F2F2DA;
+  --accent: #F0603F;
+  --accent-dark: #db5d23;
+  --accent-bg: rgba(248, 219, 198, 0.1);
+  --accent-border: rgba(255, 151, 77, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: 'Schoolbell', sans-serif;
+  --heading: 'testtypelefthand', sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145%;
+  font-family: 'Schoolbell', sans-serif;
+  letter-spacing: 0.18px;
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-stroke: 0.4px currentColor;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  color: var(--text-h);
+  -webkit-text-stroke: 1px currentColor;
+}
+
+h1 {
+  font-size: 56px;
+  margin: 10px 0 20px 0;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+}
+
+p {
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  line-height: 150%;
+  color: var(--text);
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+#root {
+  width: 100%;
+  max-width: 100vw;
+  border: 0;
+  overflow-x: hidden;
+  padding: 30px;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
+
+body,
+button,
+input,
+select,
+textarea,
+.btn,
+.form-control,
+.nav-link,
+.modal-content
+.modal-title {
+  font-family: var(--sans) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: var(--heading) !important;
+}

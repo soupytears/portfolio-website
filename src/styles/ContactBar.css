@@ -1,0 +1,34 @@
+.nav-icon {
+  width: 64px !important;
+  height: 64px !important;
+  object-fit: contain;
+  display: block;
+}
+
+.navbar-container {
+  margin: 0px !important;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar-nav .nav-link,
+.navbar-nav>* {
+  padding: 0 !important;
+}
+
+.navbar-nav {
+  justify-content: center !important;
+}
+
+.contact-bar {
+  position: relative;
+  padding-top: 1rem;
+}
+
+.nav-title {
+  position: absolute;
+  top: 15%;
+  left: 0;
+}

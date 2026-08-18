@@ -1,0 +1,42 @@
+.rounded-card {
+  border-radius: 16px !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+  border: 3px dashed var(--border);
+  background-color: var(--bg);
+  flex: 1 1 450px;
+  max-width: 550px;
+  width: 100%;
+}
+
+.rounded-card:hover {
+  transform: translateY(-4px);
+}
+
+.github-icon-link {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.github-icon-link:hover {
+  transform: scale(1.1);
+}
+
+.github-icon-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  font-size: 24px;
+}
