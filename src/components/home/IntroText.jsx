@@ -3,8 +3,8 @@ import { useInView, motion } from 'framer-motion';
 
 export default function IntroText({ className }) {
   return (
-    <div className={`w-full text-left ${className || ''}`}>
-      <TypingEffect text={'hi , i\'m\nmichelle !'} style={titleText} />
+    <div className={`w-full w-full text-center md:text-left ${className || ""}`}>
+      <TypingEffect text={"hi , i'm\nmichelle !"} style={titleText} />
     </div>
   );
 }
@@ -12,7 +12,6 @@ export default function IntroText({ className }) {
 const titleText = {
   fontFamily: 'testtypelefthand',
   fontSize: '80px',
-  textAlign: 'left',
   letterSpacing: '0.05em',
   color: 'var(--accent-dark)'
 };
@@ -51,13 +50,13 @@ function TypingEffect({ text, style }) {
     <h2
       ref={ref}
       style={style}
-      className='text-xl text-center sm:text-4xl font-bold tracking-tighter md:text-6xl md:leading-[4rem]'
+      className='text-xl text-center sm:text-4xl md:text-6xl'
     >
       {text.split('').map((letter, index) => {
+        // add a space
         if (letter === '\n') {
           return <br key={index} />;
         }
-
         return (
           <motion.span
             key={index}
