@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Card from 'react-bootstrap/Card';
-import { githubIcon, githubHoverIcon } from '../assets/sns_icons/index.js'
+import { githubIcon, githubHoverIcon } from "../assets/images/icons/index.js";
 import '../styles/ProjectCard.css';
 
 export default function ProjectCard({ title, description, projectLink }) {

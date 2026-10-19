@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import caterpillarImg from '../../assets/images/caterpillar.png';
+import caterpillarImg from '../../assets/images/drawings/caterpillar.png';
 
 export default function Caterpillar({ className }) {
   return (

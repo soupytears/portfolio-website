@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import '../styles/ContactForm.css';
+import { info } from "../assets/data/pageData"; 
 
 export default function ContactForm() {
   const [result, setResult] = useState('');
@@ -9,10 +10,10 @@ export default function ContactForm() {
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
-    formData.append('access_key', 'd11bf097-d602-4578-a8ea-ec576422e5ba');
+    formData.append('access_key', info.contact.accessKey);
 
-    const response = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
+    const response = await fetch(info.contact.link, {
+      method: "POST",
       body: formData,
     });
 

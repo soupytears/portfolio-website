@@ -1,4 +1,5 @@
-.footer p, a {
+.footer p,
+.footer a {
   color: var(--text-g);
   font-size: 12px;
 }

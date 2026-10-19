@@ -84,6 +84,10 @@ p {
   color: var(--text);
 }
 
+a {
+  color: var(--text-g);
+}
+
 html,
 body {
   margin: 0;

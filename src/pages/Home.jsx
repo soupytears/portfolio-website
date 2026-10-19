@@ -9,7 +9,8 @@ export default function Home() {
         <HeroGraphic />
       </Container>
       <Container>
-        <p className='self-intro'>programmer • artist • student</p>
+        <p className="self-intro">programmer • artist • student</p>
+        <p className="self-intro-paragraph">Click around to learn more about me!</p>
       </Container>
     </>
   );

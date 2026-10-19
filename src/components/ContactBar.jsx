@@ -12,8 +12,9 @@ import {
   linkedinHoverIcon,
   emailIcon,
   emailHoverIcon,
-} from '../assets/sns_icons/index.js';
+} from '../assets/images/icons/index.js';
 import '../styles/ContactBar.css';
+import { info } from "../assets/data/pageData.js"; 
 
 export default function ContactBar() {
   const [showModal, setShowModal] = useState(false);
@@ -33,13 +34,13 @@ export default function ContactBar() {
           <Container className="d-flex justify-content-center">
             <Nav className="d-flex flex-row gap-1 gap-sm-2 text-center">
               <NavItem
-                href="https://github.com/soupytears"
+                href={info.socialLinks.github}
                 defaultImg={githubIcon}
                 hoverImg={githubHoverIcon}
                 alt="github"
               />
               <NavItem
-                href="https://www.linkedin.com/in/michelle-chung-d/"
+                href={info.socialLinks.linkedin}
                 defaultImg={linkedinIcon}
                 hoverImg={linkedinHoverIcon}
                 alt="linkedin"

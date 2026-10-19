@@ -1,6 +1,7 @@
-import Container from 'react-bootstrap/Container';
-import ProjectCard from '../components/ProjectCard'
-import '../styles/Projects.css';
+import Container from "react-bootstrap/Container";
+import ProjectCard from "../components/ProjectCard";
+import { projects } from "../assets/data/pageData"; 
+import "../styles/Projects.css";
 
 export default function Projects() {
   return (
@@ -9,34 +10,14 @@ export default function Projects() {
         <h1>projects</h1>
       </Container>
       <Container className="project-grid">
-        <ProjectCard
-          title="this is a project title"
-          description={
-            "this is some placeholder text to see what this will look like. this will obviously not stay forever"
-          }
-          projectLink={"https://github.com"}
-        />
-        <ProjectCard
-          title="this is a project title"
-          description={
-            "this is some placeholder text to see what this will look like. this will obviously not stay forever"
-          }
-          projectLink={"https://github.com"}
-        />
-        <ProjectCard
-          title="this is a project title"
-          description={
-            "this is some placeholder text to see what this will look like. this will obviously not stay forever"
-          }
-          projectLink={"https://github.com"}
-        />
-        <ProjectCard
-          title="this is a project title"
-          description={
-            "this is some placeholder text to see what this will look like. this will obviously not stay forever"
-          }
-          projectLink={"https://github.com"}
-        />
+        {Object.entries(projects).map(([key, project]) => (
+          <ProjectCard
+            key={key}
+            title={project.title}
+            description={project.description}
+            projectLink={project.link}
+          />
+        ))}
       </Container>
     </>
   );

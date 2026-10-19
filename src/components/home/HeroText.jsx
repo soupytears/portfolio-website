@@ -1,7 +1,7 @@
 import React from 'react';
 import { useInView, motion } from 'framer-motion';
 
-export default function IntroText({ className }) {
+export default function HeroText({ className }) {
   return (
     <div className={`w-full w-full text-center md:text-left ${className || ""}`}>
       <TypingEffect text={"hi , i'm\nmichelle !"} style={titleText} />

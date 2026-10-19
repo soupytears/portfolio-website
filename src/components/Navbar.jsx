@@ -14,7 +14,6 @@ function NavItem({ to, href, children }) {
       <MotionNavLink
         href={href}
         target="_blank"
-        rel="noopener noreferrer"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >
